@@ -5,7 +5,7 @@
 
 I have seen some implementations on the internet using Pygame, but none of them has the color change when the logo bounces off wall. So I decided to create my version as a fun, mini project to teach my students Pygame's basic object movements.
 
-You can change either foreground or background color, the code is set to foreground color change by default. In `main.py`, simply set the variable `option` to **1** for foreground or **2** for background color change.
+You can change either foreground or background color, the code is set to foreground color change by default. In `main.py`, simply set the variable `option` to `1` for foreground or `2` for background color change.
 
 #### Foreground color change (YES IT HITS THE CORNER!)
 <img src="./stuffs/fg.gif" alt="DVD logo - foreground" width="80%">
