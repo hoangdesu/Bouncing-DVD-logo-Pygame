@@ -8,14 +8,14 @@ def main():
     pg.display.set_caption("Pygame - Bouncing DVD logo")
     
     dvd = DVD(window)
+    pg.display.set_icon(dvd.logo)
     
     # 1 for foreground color change (default), 2 for background color change
-    option = 2
+    option = 1
     if option == 2:
         dvd.logo = pg.transform.smoothscale(dvd.sprite, (dvd.width, dvd.height)) 
         dvd.color = (0, 0, 0, 0)
         
-    pg.display.set_icon(dvd.logo)
     clock = pg.time.Clock()
     
     running = True
