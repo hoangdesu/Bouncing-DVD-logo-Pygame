@@ -8,10 +8,10 @@ I have seen some implementations on the internet using Pygame, but none of them 
 You can change either foreground or background color, the code is set to foreground color change by default. In `main.py`, simply set the variable `option` to **1** for foreground or **2** for background color change.
 
 #### Foreground color change (YES IT HITS THE CORNER!)
-<img src="./stuffs/fg.gif" alt="Welcome screen" width="70%">
+<img src="./stuffs/fg.gif" alt="DVD logo - foreground" width="80%">
 
 #### Background color change
-<img src="./stuffs/bg.gif" alt="Welcome screen" width="70%">
+<img src="./stuffs/bg.gif" alt="DVD logo - background" width="80%">
 
 # Connect with me
 * My [personal website](https://hoangdesu.com/)
