@@ -1,22 +1,24 @@
-from DVD_foreground import *
-# import pygame as pg
-
-from pygame.constants import FULLSCREEN
-
-# SCREEN_WIDTH, SCREEN_HEIGHT = 900, 600
-
+from DVD import *
+# from DVD_backgroud import *
 
 def main():
     pg.init()
     
     window = pg.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    pg.display.set_caption("Pygame Bouncing DVD")
+    pg.display.set_caption("Pygame - Bouncing DVD logo")
     
     dvd = DVD(window)
+    
+    # 1 for foreground color change (default), 2 for background color change
+    option = 2
+    if option == 2:
+        dvd.logo = pg.transform.smoothscale(dvd.sprite, (dvd.width, dvd.height)) 
+        dvd.color = (0, 0, 0, 0)
+        
+    pg.display.set_icon(dvd.logo)
     clock = pg.time.Clock()
     
     running = True
-    print(dvd.logo.get_at((50, 50)))
     while running:
         for evt in pg.event.get():
             if evt.type == pg.QUIT:
@@ -25,7 +27,6 @@ def main():
         window.fill('#101010')
         
         dvd.update()
-        
         dvd.render()
         
         clock.tick(60)
@@ -33,8 +34,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
-    
-# NOTES: 2 ways to change color:
-#     1. simple: fill the logo with blend mode (after some times, it will blend to white -> no more color changes)
-#     2. replace pixel array
