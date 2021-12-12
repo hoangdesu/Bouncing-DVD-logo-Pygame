@@ -11,7 +11,7 @@ You can change either foreground or background color, the code is set to foregro
 <img src="./stuffs/fg.gif" alt="Welcome screen" width="70%">
 
 #### Background color change
-<img src="./stuffs/Bg.gif" alt="Welcome screen" width="70%">
+<img src="./stuffs/bg.gif" alt="Welcome screen" width="70%">
 
 # Connect with me
 * My [personal website](https://hoangdesu.com/)
