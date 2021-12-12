@@ -1,5 +1,4 @@
 from DVD import *
-# from DVD_backgroud import *
 
 def main():
     pg.init()
